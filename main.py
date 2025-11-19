@@ -1,6 +1,6 @@
 from empleados import *
 from reportes import *
-from programacion import * 
+from programacion import *
 import datetime
 
 empleados = [
@@ -15,10 +15,11 @@ empleados = [
 reportes = [
     ReporteContabilidad(empleados),
     ReporteEmpleados(empleados),
-    ReporteProgramacion(empleados)
+    ReporteProgramacion(empleados),
+    # ReporteInventario(empleados)
 ]
 
 for r in reportes:
     print(r.print_reporte())
 
-# e = Empleado("Juan", "Perez", Matutino())
+#e = Gerente("Juan", "Perez", Matutino())
